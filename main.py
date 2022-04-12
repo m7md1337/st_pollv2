@@ -12,38 +12,11 @@ def r(id):
 
 
 def toenc(payload,id):
-    global str1
-    r = []
-    le1 = len(payload)
-    le4 = len(id)
-    str1 = ""
-    for xx in range(le1):
-        r.append(ord(payload[xx:xx+2][0]))
-    le2 = len(r)
-    for zz in range(le2+1):
-        try:
-            str1+=chr(r[zz] ^ zz % le4)
-        except IndexError:
-            str1+=chr(0 ^ zz % le4)
-    return str1
-
+     # call me on telegram m7md1337
 
 
 def todec(payload,id):
-    global str2
-    r = []
-    le1 = len(payload)
-    le4 = len(id)
-    str2 = ""
-    for xx in range(le1):
-        r.append(ord(payload[xx:xx+2][0]))
-    le2 = len(r)
-    for zz in range(le2+1):
-        try:
-            str2+=chr(  zz % le4^r[zz])
-        except IndexError:
-            str2+=chr(  zz % le4^0)
-    return str2
+    # call me on telegram m7md1337
 
 
 
